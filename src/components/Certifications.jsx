@@ -26,9 +26,9 @@ const Certifications = () => {
         <div className="projects-grid" id="certGrid">
           {certificates.map((cert, index) => (
             <div className="project-card reveal" key={index}>
-              <div className="project-preview" style={{ height: '180px', padding: 0, overflow: 'hidden' }}>
+              <div className="project-preview" style={{ height: '320px', padding: 0, overflow: 'hidden' }}>
                 {cert.image ? (
-                  <img src={cert.image} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={cert.image} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'contain', backgroundColor: '#0a0a0c' }} />
                 ) : (
                   <span className="project-preview-icon" style={{ fontSize: '3rem', marginTop: '60px', display: 'block', textAlign: 'center' }}>{cert.icon}</span>
                 )}
