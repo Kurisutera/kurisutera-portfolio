@@ -29,6 +29,7 @@ const Navbar = () => {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#contact" className="nav-cta">Get in Touch</a>
@@ -43,6 +44,7 @@ const Navbar = () => {
         <a href="#skills" onClick={closeMenu}>Skills</a>
         <a href="#experience" onClick={closeMenu}>Experience</a>
         <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#certifications" onClick={closeMenu}>Certifications</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
       </div>
     </>
