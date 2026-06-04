@@ -93,3 +93,29 @@ export const contactLinks = [
   { icon: '🐙', label: 'GitHub', value: '@pauljaphet', href: 'https://github.com' },
   { icon: '💼', label: 'LinkedIn', value: 'Paul Japhet Cabusas', href: 'https://linkedin.com' },
 ];
+export const certificates = [
+  {
+    title: 'Intro to SQL',
+    icon: '📜',
+    image: '/cert/introSQL.png',
+    file: '/cert/introSQL.pdf'
+  },
+  {
+    title: 'SQL Certification',
+    icon: '📜',
+    image: '/cert/sqlcert.png',
+    file: '/cert/sqlcert.pdf'
+  },
+  {
+    title: 'Hands-On Python Machine Learning with Real World Projects',
+    icon: '📜',
+    image: '/cert/Hands-On Python Machine Learning with Real World Projects.jpg',
+    file: '/cert/Hands-On Python Machine Learning with Real World Projects.pdf'
+  },
+  {
+    title: 'Complete Machine Learning Project Using YOLOv9 From Scratch',
+    icon: '📜',
+    image: '/cert/Complete Machine Learning Project Using YOLOv9 From Scratch.jpg',
+    file: '/cert/Complete Machine Learning Project Using YOLOv9 From Scratch.pdf'
+  }
+];
