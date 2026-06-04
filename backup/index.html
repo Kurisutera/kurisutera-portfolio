@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kuri | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">kuri</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content hidden">
+            <h1>Hi, I'm <span class="highlight">Paul Japhet Cabusas</span></h1>
+            <h2>Aspiring Developer & Creative Thinker</h2>
+            <p>IT student eager to build web projects, learn new skills, and grow in a professional environment.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-graphic hidden">
+            <div class="glass-orb"></div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <h2 class="section-title hidden">About Me</h2>
+        <div class="about-container hidden">
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="about-text glass-card">
+                <h3>Who am I?</h3>
+                <p>I am an IT student at Holy Cross of Davao College, currently looking for an internship to gain hands-on experience in web projects and school-based applications.</p>
+                <p>I consider myself curious and motivated to learn new skills. I value teamwork, collaboration, and approach challenges with a responsible and organized mindset.</p>
+                <div class="info-grid">
+                    <div class="info-item"><span>Location:</span> Davao City, Philippines</div>
+                    <div class="info-item"><span>Email:</span> kurisutera13@gmail.com</div>
+                    <div class="info-item"><span>Languages:</span> English, Filipino</div>
+                    <div class="info-item"><span>Education:</span> BSIT (Jan 2026 - Present)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Skills -->
+    <section id="skills" class="skills">
+        <h2 class="section-title hidden">Tech Skills</h2>
+        <div class="skills-grid hidden">
+            <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-pill"><i class="fa-brands fa-laravel"></i> Laravel</div>
+            <div class="skill-pill"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="skill-pill"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill-pill">C#</div>
+            <div class="skill-pill"><i class="fa-solid fa-database"></i> MySQL</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience">
+        <h2 class="section-title hidden">Experience & Education</h2>
+        <div class="timeline hidden">
+            <div class="timeline-item glass-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <h4>Holy Cross of Davao College</h4>
+                    <span class="date">January 2026 - Present</span>
+                    <p>Relevant Courses: Web Development, Database Management, Programming.</p>
+                </div>
+            </div>
+            <div class="timeline-item glass-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Web & Mobile App Development</h3>
+                    <h4>Capstone Project</h4>
+                    <span class="date">Recent</span>
+                    <p>Assisted in building school web and mobile applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2 class="section-title hidden">Featured Projects</h2>
+        <div class="projects-grid hidden">
+            <div class="project-card glass-card">
+                <div class="project-image">
+                    <div class="placeholder-img"><i class="fa-solid fa-code"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>School Management System</h3>
+                    <p>Implemented basic front-end features and database management for functional web applications.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span>
+                    </div>
+                    <a href="#" class="btn primary-btn small">View Preview</a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="project-image">
+                    <div class="placeholder-img"><i class="fa-solid fa-mobile-screen"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>School Mobile App</h3>
+                    <p>Designed and developed mobile applications, delivering responsive and modern user interfaces.</p>
+                    <div class="tech-stack">
+                        <span>Java</span><span>UI/UX</span>
+                    </div>
+                    <a href="#" class="btn primary-btn small">View Preview</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contact" class="contact">
+        <h2 class="section-title hidden">Get In Touch</h2>
+        <div class="contact-container hidden">
+            <div class="contact-info glass-card">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                <div class="contact-methods">
+                    <p><i class="fa-solid fa-envelope"></i> kurisutera13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0992 595 2707</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Davao City, Philippines</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form glass-card" id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Paul Japhet Cabusas. Built with <i class="fa-solid fa-heart"></i> and curiosity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
