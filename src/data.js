@@ -117,5 +117,11 @@ export const certificates = [
     icon: '📜',
     image: '/cert/Complete Machine Learning Project Using YOLOv9 From Scratch.jpg',
     file: '/cert/Complete Machine Learning Project Using YOLOv9 From Scratch.pdf'
+  },
+  {
+    title: 'Cloud Engineering Masterclass AWS & Azure - Zero to Product',
+    icon: '📜',
+    image: '/cert/Cloud Engineering Masterclass AWS & Azure - Zero to Product.jpg',
+    file: '/cert/Cloud Engineering Masterclass AWS & Azure - Zero to Product.pdf'
   }
 ];
