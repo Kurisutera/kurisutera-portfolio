@@ -558,20 +558,20 @@
   .timeline {
     position: relative;
     margin-top: 3rem;
-    padding-left: 2rem;
+    padding-left: 0;
   }
   .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 1rem;
     top: 0; bottom: 0;
-    width: 1px;
+    width: 2px;
     background: linear-gradient(180deg, transparent, var(--accent1) 20%, var(--accent2) 80%, transparent);
   }
   .timeline-item {
     position: relative;
     margin-bottom: 3rem;
-    padding-left: 2rem;
+    padding-left: 3.5rem;
     opacity: 0;
     transform: translateX(-20px);
     transition: opacity 0.6s, transform 0.6s;
@@ -582,8 +582,8 @@
   }
   .timeline-dot {
     position: absolute;
-    left: -2.5rem;
-    top: 0.35rem;
+    left: calc(1rem - 5px);
+    top: 2.2rem;
     width: 12px; height: 12px;
     border-radius: 50%;
     background: var(--grad);
@@ -596,6 +596,7 @@
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
+    height: 200px;
     transition: border-color 0.3s, box-shadow 0.3s;
   }
   .tl-card::before {

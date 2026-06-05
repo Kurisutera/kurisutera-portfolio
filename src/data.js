@@ -12,33 +12,19 @@ export const skills = [
 
 export const experiences = [
   {
-    period: '2024 — Present',
-    role: 'IT Student & Developer',
-    org: 'University / Personal Projects',
-    desc: 'Pursuing a Bachelor\'s in Information Technology while developing full-stack web applications, honing problem-solving skills, and participating in hackathons and competitions.',
-    tags: ['PHP', 'Laravel', 'MySQL', 'JavaScript']
+    period: 'April 2026 — Present',
+    role: 'Records Management and Administrative Operations Intern',
+    org: 'Silangan Multipurpose Cooperative / Davao City, PH',
+    desc: 'Assisted in records management, document control, and administrative tasks including filing, document verification, and data encoding. Supported daily office operations and maintained accurate, organized, and confidential records while ensuring efficient information management.',
+    tags: ['Records Management', 'Data Encoding', 'Admin Support']
   },
   {
-    period: '2024',
-    role: 'Web Development Intern',
-    org: 'Local Tech Company',
-    desc: 'Assisted in building and maintaining web applications. Collaborated with senior developers to implement features, conduct testing, and improve existing codebases using modern web technologies.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'PHP']
-  },
-  {
-    period: '2023 — 2024',
-    role: 'Freelance Web Developer',
-    org: 'Independent',
-    desc: 'Designed and developed responsive websites for small businesses and individuals. Delivered projects end-to-end — from client communication and design mockups to deployment.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'WordPress']
-  },
-  {
-    period: '2023',
-    role: 'Team Lead — Capstone Project',
-    org: 'University IT Department',
-    desc: 'Led a team of 4 students in designing and developing a full-stack web application for the university. Coordinated sprints, delegated tasks, and ensured timely delivery.',
-    tags: ['Laravel', 'MySQL', 'Vue.js', 'Agile']
-  },
+    period: 'March 2026',
+    role: 'Technofair 2026 Participant',
+    org: 'Event Participation',
+    desc: 'Participated in Technofair 2026 as a project exhibitor, showcasing OutcomeX.',
+    tags: ['Exhibition', 'OutcomeX', 'Technofair']
+  }
 ];
 
 export const projects = [

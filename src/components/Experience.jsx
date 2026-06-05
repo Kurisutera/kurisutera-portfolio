@@ -16,11 +16,6 @@ const Experience = () => {
                 <div className="tl-role">{e.role}</div>
                 <div className="tl-org">{e.org}</div>
                 <div className="tl-desc">{e.desc}</div>
-                <div className="tl-tags">
-                  {e.tags.map((t, idx) => (
-                    <span className="tl-tag" key={idx}>{t}</span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}
