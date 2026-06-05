@@ -21,10 +21,6 @@ const Projects = () => {
                     <span key={idx}>{t}</span>
                   ))}
                 </div>
-                <div className="project-footer">
-                  <a href="#" className="btn-project primary">Preview</a>
-                  <a href="#" className="btn-project">GitHub</a>
-                </div>
               </div>
             </div>
           ))}

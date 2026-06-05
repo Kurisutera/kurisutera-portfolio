@@ -49,41 +49,17 @@ export const projects = [
     stack: ['Python', 'PyQt6', 'PyTorch', 'NLP'],
   },
   {
-    title: 'ScholarTrack',
-    icon: '📚',
-    desc: 'A full-stack scholarship management system for universities. Features student tracking, document uploads, status monitoring, and admin dashboards.',
-    stack: ['Laravel', 'MySQL', 'Blade', 'Alpine.js'],
+    title: 'Mitsuketa',
+    icon: '🔍',
+    desc: 'A Laravel-based Lost and Found Portal designed to help users report, track, and recover misplaced belongings efficiently. The platform provides a centralized system for submitting reports, managing claims, and facilitating communication between owners and finders.',
+    stack: ['Laravel', 'PHP', 'MySQL'],
   },
   {
-    title: 'TaskFlow',
-    icon: '✅',
-    desc: 'A minimal project management app with Kanban boards, task assignments, deadline reminders, and real-time collaboration features.',
-    stack: ['PHP', 'JavaScript', 'MySQL', 'CSS'],
-  },
-  {
-    title: 'ShopLite',
-    icon: '🛒',
-    desc: 'A lightweight e-commerce platform with product catalog, cart system, order management, and a clean responsive storefront.',
-    stack: ['Laravel', 'MySQL', 'Tailwind', 'Livewire'],
-  },
-  {
-    title: 'ByteBlog',
-    icon: '📝',
-    desc: 'A developer-focused blog platform with Markdown support, syntax highlighting, category filtering, and a minimal editorial interface.',
-    stack: ['PHP', 'MySQL', 'JavaScript', 'CSS'],
-  },
-  {
-    title: 'ClimaWatch',
-    icon: '🌤',
-    desc: 'A weather dashboard app pulling live data from APIs. Displays current conditions, forecasts, and interactive weather maps with smooth UI.',
-    stack: ['JavaScript', 'REST API', 'HTML', 'CSS'],
-  },
-  {
-    title: 'CodeSprint',
-    icon: '🚀',
-    desc: 'An online coding quiz platform with timed challenges, leaderboards, and topic-based problem sets designed for CS students.',
-    stack: ['Java', 'MySQL', 'Swing', 'OOP'],
-  },
+    title: 'Sanction Management System',
+    icon: '⚖️',
+    desc: 'A desktop application developed to help educational institutions efficiently manage student disciplinary records and sanctions. Provides a centralized platform for recording violations, assigning sanctions, tracking history, and generating reports.',
+    stack: ['C#', 'SQL'],
+  }
 ];
 
 export const contactLinks = [
