@@ -87,10 +87,10 @@ export const projects = [
 ];
 
 export const contactLinks = [
-  { icon: '📧', label: 'Email', value: 'pauljaphet@email.com', href: 'mailto:pauljaphet@email.com' },
+  { icon: '📧', label: 'Email', value: 'kurisutera13@gmail.com', href: 'mailto:kurisutera13@gmail.com' },
   { icon: '💙', label: 'Facebook', value: 'Paul Japhet Cabusas', href: 'https://facebook.com' },
-  { icon: '📸', label: 'Instagram', value: '@pauljaphet', href: 'https://instagram.com' },
-  { icon: '🐙', label: 'GitHub', value: '@pauljaphet', href: 'https://github.com' },
+  { icon: '📸', label: 'Instagram', value: '@kurisuteraa_', href: 'https://instagram.com/kurisuteraa_' },
+  { icon: '🐙', label: 'GitHub', value: '@Kurisutera', href: 'https://github.com/Kurisutera' },
   { icon: '💼', label: 'LinkedIn', value: 'Paul Japhet Cabusas', href: 'https://linkedin.com' },
 ];
 export const certificates = [

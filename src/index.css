@@ -664,6 +664,27 @@
     gap: 1.5rem;
     margin-top: 3rem;
   }
+  
+  /* Enforce 2 columns for certificates and center the last item if odd */
+  #certGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #certGrid .project-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 0.75rem);
+  }
+  
+  @media (max-width: 800px) {
+    #certGrid {
+      grid-template-columns: 1fr;
+    }
+    #certGrid .project-card:last-child:nth-child(odd) {
+      grid-column: 1;
+      width: 100%;
+    }
+  }
   .project-card {
     border-radius: var(--radius);
     background: var(--surface);
