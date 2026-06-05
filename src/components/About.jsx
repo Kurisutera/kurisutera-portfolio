@@ -1,4 +1,4 @@
-import React from 'react';
+import profileImg from '../assets/profileee.jpg';
 
 const About = () => {
   return (
@@ -8,10 +8,11 @@ const About = () => {
         <div className="about-grid">
           <div className="about-avatar-wrap reveal">
             <div className="about-avatar-frame">
-              <div className="avatar-placeholder">
-                <div className="avatar-icon">👨🏻‍💻</div>
-                <span className="avatar-text">Profile Photo</span>
-              </div>
+              <img 
+                src={profileImg} 
+                alt="Paul Japhet Cabusas" 
+                className="about-avatar-img" 
+              />
             </div>
             <div className="about-deco"></div>
             <div className="about-deco2"></div>
