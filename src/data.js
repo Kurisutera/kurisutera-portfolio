@@ -1,13 +1,17 @@
+import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaLaravel, FaJava, FaPython } from 'react-icons/fa';
+import { SiMysql } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
+
 export const skills = [
-  { name: 'HTML', icon: '🌐', level: 90 },
-  { name: 'CSS', icon: '🎨', level: 85 },
-  { name: 'JavaScript', icon: '⚡', level: 80 },
-  { name: 'PHP', icon: '🐘', level: 75 },
-  { name: 'Laravel', icon: '🔴', level: 70 },
-  { name: 'Java', icon: '☕', level: 70 },
-  { name: 'Python', icon: '🐍', level: 65 },
-  { name: 'C#', icon: '💜', level: 60 },
-  { name: 'MySQL', icon: '🗄️', level: 80 },
+  { name: 'HTML', icon: FaHtml5, level: 90, color: '#E34F26' },
+  { name: 'CSS', icon: FaCss3Alt, level: 85, color: '#1572B6' },
+  { name: 'JavaScript', icon: FaJs, level: 80, color: '#F7DF1E' },
+  { name: 'PHP', icon: FaPhp, level: 75, color: '#777BB4' },
+  { name: 'Laravel', icon: FaLaravel, level: 70, color: '#FF2D20' },
+  { name: 'Java', icon: FaJava, level: 70, color: '#007396' },
+  { name: 'Python', icon: FaPython, level: 65, color: '#3776AB' },
+  { name: 'C#', icon: TbBrandCSharp, level: 60, color: '#239120' },
+  { name: 'MySQL', icon: SiMysql, level: 80, color: '#4479A1' },
 ];
 
 export const experiences = [
@@ -24,6 +28,55 @@ export const experiences = [
     org: 'Event Participation',
     desc: 'Participated in Technofair 2026 as a project exhibitor, showcasing OutcomeX.',
     tags: ['Exhibition', 'OutcomeX', 'Technofair']
+  },
+  {
+    period: 'March 26, 2025',
+    role: 'Champion — MLBB Tournament',
+    org: 'CET Technofair',
+    desc: 'Secured the championship title in the Mobile Legends: Bang Bang tournament during the CET Technofair.',
+    tags: ['Esports', 'MLBB', 'Champion']
+  },
+  {
+    period: 'March 15, 2025',
+    role: 'Champion — MLBB Tournament',
+    org: 'PSITS Region 11 Festival of Talents',
+    desc: 'Emerged as the champion in the Mobile Legends: Bang Bang competition at the PSITS Region 11 Festival of Talents.',
+    tags: ['Esports', 'MLBB', 'Champion']
+  },
+  {
+    period: 'October 14, 2024',
+    role: 'Champion — MLBB Tournament',
+    org: 'CET DAY',
+    desc: 'Secured the championship title in the Mobile Legends: Bang Bang tournament during CET DAY.',
+    tags: ['Esports', 'MLBB', 'Champion']
+  },
+  {
+    period: 'February 2024',
+    role: 'Participant — MLBB Competition',
+    org: 'PSITS Interschool Esports',
+    desc: 'Participated and competed in the PSITS Interschool Esports Mobile Legends: Bang Bang competition.',
+    tags: ['Esports', 'MLBB', 'Participant']
+  },
+  {
+    period: 'March 20, 2024',
+    role: 'Champion — MLBB Tournament',
+    org: 'CET Technofair',
+    desc: 'Won the championship for the Mobile Legends: Bang Bang tournament during the CET Technofair.',
+    tags: ['Esports', 'MLBB', 'Champion']
+  },
+  {
+    period: 'May 23–24, 2023',
+    role: 'Champion — MLBB: Esports Tournament',
+    org: 'Technofair 2023',
+    desc: 'Secured the championship in the Mobile Legends: Bang Bang esports tournament during Technofair 2023.',
+    tags: ['Esports', 'MLBB', 'Champion']
+  },
+  {
+    period: 'November 17–18, 2022',
+    role: 'Champion — MLBB Tournament',
+    org: 'CET DAY',
+    desc: 'Emerged as the champion in the Mobile Legends: Bang Bang tournament during CET DAY.',
+    tags: ['Esports', 'MLBB', 'Champion']
   }
 ];
 
