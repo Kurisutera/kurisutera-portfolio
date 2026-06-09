@@ -11,17 +11,42 @@ const Contact = () => {
     setButtonText('Sending...');
     setDisabled(true);
 
-    setTimeout(() => {
-      setButtonText('✓ Message Sent!');
-      setButtonStyle({ background: 'linear-gradient(135deg, #22c55e, #16a34a)' });
-      
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch("https://formsubmit.co/ajax/kurisutera13@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        setButtonText('✓ Message Sent!');
+        setButtonStyle({ background: 'linear-gradient(135deg, #22c55e, #16a34a)' });
+        e.target.reset();
+      } else {
+        setButtonText('✗ Failed to Send');
+        setButtonStyle({ background: 'linear-gradient(135deg, #ef4444, #dc2626)' });
+      }
       setTimeout(() => {
         setButtonText('Send Message →');
         setButtonStyle({});
         setDisabled(false);
-        e.target.reset();
       }, 3000);
-    }, 1500);
+    })
+    .catch(error => {
+      console.error(error);
+      setButtonText('✗ Error Occurred');
+      setButtonStyle({ background: 'linear-gradient(135deg, #ef4444, #dc2626)' });
+      setTimeout(() => {
+        setButtonText('Send Message →');
+        setButtonStyle({});
+        setDisabled(false);
+      }, 3000);
+    });
   };
 
   return (
@@ -55,20 +80,20 @@ const Contact = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Name</label>
-                  <input type="text" className="form-input" placeholder="Your name" required />
+                  <input type="text" name="name" className="form-input" placeholder="Your name" required />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Email</label>
-                  <input type="email" className="form-input" placeholder="your@email.com" required />
+                  <input type="email" name="email" className="form-input" placeholder="your@email.com" required />
                 </div>
               </div>
               <div className="form-group">
                 <label className="form-label">Subject</label>
-                <input type="text" className="form-input" placeholder="What's this about?" required />
+                <input type="text" name="_subject" className="form-input" placeholder="What's this about?" required />
               </div>
               <div className="form-group">
                 <label className="form-label">Message</label>
-                <textarea className="form-textarea" placeholder="Tell me more..." required></textarea>
+                <textarea name="message" className="form-textarea" placeholder="Tell me more..." required></textarea>
               </div>
               <button type="submit" className="form-submit" disabled={disabled} style={buttonStyle}>
                 {buttonText}

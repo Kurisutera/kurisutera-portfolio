@@ -44,18 +44,42 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.textContent = 'Sending...';
             btn.disabled = true;
             
-            // Simulate network request
-            setTimeout(() => {
-                btn.textContent = 'Message Sent!';
-                btn.style.background = '#2ecc71';
-                contactForm.reset();
-                
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch("https://formsubmit.co/ajax/kurisutera13@gmail.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    btn.textContent = 'Message Sent!';
+                    btn.style.background = '#2ecc71';
+                    contactForm.reset();
+                } else {
+                    btn.textContent = 'Failed to Send';
+                    btn.style.background = '#e74c3c';
+                }
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.disabled = false;
                     btn.style.background = '';
                 }, 3000);
-            }, 1500);
+            })
+            .catch(error => {
+                console.error(error);
+                btn.textContent = 'Error Occurred';
+                btn.style.background = '#e74c3c';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    btn.style.background = '';
+                }, 3000);
+            });
         });
     }
 
